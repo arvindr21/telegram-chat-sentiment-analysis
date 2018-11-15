@@ -1,0 +1,18 @@
+{
+  "name": "telegram",
+  "version": "1.0.0",
+  "main": "parser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Arvind Ravulavaru <arvind.ravulavaru@gmail.com> (http://thejackalofjavascript.com)",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "cli-table": "^0.3.1",
+    "natural": "^0.6.2",
+    "node-sentiment": "0.0.7"
+  }
+}
