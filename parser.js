@@ -73,9 +73,31 @@ sortable.sort(function(a, b) {
     return b[1] - a[1];
 });
 
-var j = 1;
-for (var i = 0; i < 10; i++) {
-    table.push([j++, sortable[i][0], sortable[i][1]])
+let j = 1;
+for (let i = 0; i < 10; i++) {
+    if (i < 10) {
+        table.push([j++, chalk.green.bold(sortable[i][0]), sortable[i][1]])
+    }
+}
+
+
+console.log(table.toString());
+
+var table = new Table({
+    head: ['S.No.', 'Special Word', 'Count']
+});
+
+j = 1;
+for (let i = 0; i < sortable.length; i++) {
+
+    if (
+        sortable[i][0] === 'hate' ||
+        sortable[i][0] === 'auley' ||
+        sortable[i][0] === 'tea'
+    ) {
+        table.push([j++, chalk.magenta.bold(sortable[i][0]), sortable[i][1]])
+    }
+
 }
 
 console.log(table.toString());
