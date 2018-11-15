@@ -21,6 +21,11 @@ function showContacts() {
   });
 }
 
+
+function download(){
+  return saveChat(577820122)
+}
+
 function saveChat(userId) {
   const LIMIT = 100000;
 
